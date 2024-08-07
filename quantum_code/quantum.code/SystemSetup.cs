@@ -20,6 +20,7 @@
                 new Core.PlayerConnectedSystem(),
 
                 // user systems go here 
+                new MovementSystem(),
             };
         }
     }
