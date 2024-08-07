@@ -1,5 +1,6 @@
-namespace Quantum {
-  public partial class FrameContextUser {
-    
-  }
+namespace Quantum
+{
+    public partial class FrameContextUser
+    {
+    }
 }
