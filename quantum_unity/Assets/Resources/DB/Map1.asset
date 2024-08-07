@@ -41,6 +41,383 @@ MonoBehaviour:
     NavMeshLinks: []
     Regions: []
     StaticColliders2D: []
-    StaticColliders3D: []
+    StaticColliders3D:
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+        W:
+          RawValue: 65536
+      Position:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: -65536
+        Z:
+          RawValue: 0
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 1638400
+        Y:
+          RawValue: 32768
+        Z:
+          RawValue: 1638400
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: Ground
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 0
+        MutableMode: 0
+      MutableMode: 0
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+        W:
+          RawValue: 65536
+      Position:
+        X:
+          RawValue: -525598
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -252968
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 32768
+        Y:
+          RawValue: 32768
+        Z:
+          RawValue: 32768
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: Metal
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 1
+        MutableMode: 0
+      MutableMode: 0
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+        W:
+          RawValue: 65536
+      Position:
+        X:
+          RawValue: -778567
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -76021
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 61151
+        Y:
+          RawValue: 61151
+        Z:
+          RawValue: 61151
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: Metal (1)
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 2
+        MutableMode: 0
+      MutableMode: 0
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+        W:
+          RawValue: 65536
+      Position:
+        X:
+          RawValue: -735313
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -314572
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 96283
+        Y:
+          RawValue: 96283
+        Z:
+          RawValue: 96283
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: Metal (2)
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 3
+        MutableMode: 0
+      MutableMode: 0
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+        W:
+          RawValue: 65536
+      Position:
+        X:
+          RawValue: -77332
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -433848
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 61391
+        Y:
+          RawValue: 61391
+        Z:
+          RawValue: 61391
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: Metal (3)
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 4
+        MutableMode: 0
+      MutableMode: 0
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+        W:
+          RawValue: 65536
+      Position:
+        X:
+          RawValue: -823787
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 239206
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 61391
+        Y:
+          RawValue: 61391
+        Z:
+          RawValue: 61391
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: Metal (4)
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 5
+        MutableMode: 0
+      MutableMode: 0
+    - Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+        W:
+          RawValue: 65536
+      Position:
+        X:
+          RawValue: -1125253
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 49151
+      PhysicsMaterial:
+        Id:
+          Value: 0
+      ShapeType: 2
+      SphereRadius:
+        RawValue: 0
+      BoxExtents:
+        X:
+          RawValue: 35887
+        Y:
+          RawValue: 35887
+        Z:
+          RawValue: 35887
+      SmoothSphereMeshCollisions: 0
+      StaticData:
+        Name: Metal (5)
+        Tag: Untagged
+        Layer: 0
+        Asset:
+          Id:
+            Value: 0
+        IsTrigger: 0
+        ColliderIndex: 6
+        MutableMode: 0
+      MutableMode: 0
     MapEntities: []
-  Prototypes: []
+  Prototypes:
+  - CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D:
+    - Version: 2
+      Config:
+        Value: 58
+      Mass:
+        RawValue: 65536
+      Drag:
+        RawValue: 32768
+      AngularDrag:
+        RawValue: 32768
+      CenterOfMass:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+      RotationFreeze:
+        Value: 0
+      GravityScale:
+        _hasValue: 0
+        _value:
+          RawValue: 65536
+    PhysicsCollider2D: []
+    PhysicsCollider3D:
+    - ShapeConfig:
+        ShapeType: 1
+        SphereRadius:
+          RawValue: 32768
+        PositionOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        BoxExtents:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        RotationOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        UserTag: 0
+        IsPersistent: 1
+        CompoundShapes: []
+        IsSetFromSourceCollider: 0
+      Layer: 0
+      IsTrigger: 0
+      PhysicsMaterial:
+        Id:
+          Value: 0
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D:
+    - CallbackFlags:
+        Value: 0
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
