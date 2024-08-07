@@ -366,7 +366,7 @@ MonoBehaviour:
     - ShapeConfig:
         ShapeType: 1
         SphereRadius:
-          RawValue: 32768
+          RawValue: 98304
         PositionOffset:
           X:
             RawValue: 0
@@ -406,11 +406,11 @@ MonoBehaviour:
     Transform3D:
     - Position:
         X:
-          RawValue: 0
+          RawValue: -646184
         Y:
-          RawValue: 0
+          RawValue: 713031
         Z:
-          RawValue: 0
+          RawValue: -171704
       Rotation:
         X:
           RawValue: 0
