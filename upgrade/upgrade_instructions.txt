@@ -1,0 +1,23 @@
+1. Close Unity and Visual Studio instances
+2. Delete old tools and assemblies folders
+3. Unzip tools_and_assemblies.zip in the project root (unblock the zip files on Windows before extraction by right-click and selecting properties)
+4. Unzip quantum_code.zip inside the quantum_code folder and overwrite all files
+5. When you update from any version earlier than 2.1: Open the Unity project 
+    - Delete the generated editor files folder `quantum_unity/Assets/Photon/Quantum/Generated/Editor`
+    - Delete the editor scripts folder `quantum_unity/Assets/Photon/Quantum/Editor`
+      The editor source code files have been merged to make updates in the future easier
+      If you have local modification, you need to reapply them to the combined scripts after importing the unitypackage in step 7. Contact us when you have trouble  reapplying your changes.
+6. Build quantum.code
+    - Refer to the `release_history.txt` for a comprehensive list of breaking changes
+    - The Newtonsoft Json dependency has been removed (using Unity Json as drop-in): remove remaining references inside the quantum.code.csproj by hand
+
+7. Open Unity and import quantum_unity.unitypackage (local modification are being overwritten)
+    - If the new assembly definitions are causing problems, Assets/Photon/Quantum/PhotonQuantum.asdef' and `Assets/Photon/Quantum/Editor/PhotonQuantumEditor.asmdef` can be deleted.
+	  Since version 2.1.2 F1 of the SDK, these assembly definitions are also responsible for defining the Quantum modules used, so, if deleted, the modules must be explicitly defined
+	  in the Unity Project Settings in order to be used. They are: 
+		`QUANTUM_ENABLE_PHYSICS2D`, 
+		`QUANTUM_ENABLE_PHYSICS3D`, 
+		`QUANTUM_ENABLE_AI` and 
+		`QUANTUM_ENABLE_TERRAIN`.
+
+8. (Optional) Import quantum_demo.unitypackage: only the latest demo version is ensured to be compatible with used libraries (local modification are being overwritten)
