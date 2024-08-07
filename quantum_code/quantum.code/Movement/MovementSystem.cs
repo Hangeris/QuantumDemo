@@ -9,11 +9,12 @@ namespace Quantum.Movement
             public EntityRef Entity;
             public CharacterController3D* CharacterController;
             public Transform3D* Transform;
+            public PlayerLink* Link;
         }
         
         public override void Update(Frame frame, ref Filter filter)
         {
-            var input = frame.GetPlayerInput(0);
+            var input = frame.GetPlayerInput(filter.Link->Player);
             var inputVector = new FPVector2((FP)input->X / 10, (FP)input->Y / 10);
 
             if (inputVector.SqrMagnitude > 1)
