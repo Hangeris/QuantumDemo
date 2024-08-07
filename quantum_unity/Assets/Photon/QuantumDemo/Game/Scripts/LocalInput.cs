@@ -20,8 +20,8 @@ public class LocalInput : MonoBehaviour
         input.Jump = UnityEngine.Input.GetButton(InputJump);
         
         var inputDirection = new Vector2(
-            UnityEngine.Input.GetAxis(InputHorizontal), 
-            UnityEngine.Input.GetAxis(InputVertical));
+            UnityEngine.Input.GetAxisRaw(InputHorizontal), 
+            UnityEngine.Input.GetAxisRaw(InputVertical));
         
         input.X = (short)(inputDirection.x * 10);
         input.Y = (short)(inputDirection.y * 10);
