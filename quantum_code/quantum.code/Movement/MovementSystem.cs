@@ -20,6 +20,9 @@ namespace Quantum.Movement
                 inputVector = inputVector.Normalized;
             
             filter.CharacterController->Move(frame, filter.Entity, inputVector.XOY);
+            
+            if (input->Jump.WasPressed)
+                filter.CharacterController->Jump(frame);
         }
     }
 }
