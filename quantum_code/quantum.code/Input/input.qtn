@@ -1,0 +1,7 @@
+input
+{
+    short X;
+    short Y;
+    
+    button Jump;
+}

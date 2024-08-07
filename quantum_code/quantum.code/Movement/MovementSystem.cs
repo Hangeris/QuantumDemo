@@ -1,6 +1,6 @@
 ﻿using Photon.Deterministic;
 
-namespace Quantum
+namespace Quantum.Movement
 {
     public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter>
     {
@@ -13,8 +13,13 @@ namespace Quantum
         
         public override void Update(Frame frame, ref Filter filter)
         {
-            var moveDirection = FPVector3.Forward;
-            filter.CharacterController->Move(frame, filter.Entity, moveDirection);
+            var input = frame.GetPlayerInput(0);
+            var inputVector = new FPVector2((FP)input->X / 10, (FP)input->Y / 10);
+
+            if (inputVector.SqrMagnitude > 1)
+                inputVector = inputVector.Normalized;
+            
+            filter.CharacterController->Move(frame, filter.Entity, inputVector.XOY);
         }
     }
 }

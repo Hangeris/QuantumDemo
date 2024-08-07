@@ -1,4 +1,6 @@
-﻿namespace Quantum
+﻿using Quantum.Movement;
+
+namespace Quantum
 {
     public static class SystemSetup
     {
