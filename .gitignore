@@ -71,5 +71,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Sensitive files
+*/Assets/Resources/PhotonServerSettings.asset
+
 # ParrelSync projects
 quantum_unity_clone_*
