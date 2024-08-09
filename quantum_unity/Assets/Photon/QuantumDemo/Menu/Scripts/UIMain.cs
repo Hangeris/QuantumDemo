@@ -1,28 +1,27 @@
 ﻿using UnityEngine;
 
-namespace Quantum.Demo {
-  public class UIMain : MonoBehaviour {
-    public static QuantumLoadBalancingClient Client { get; set; }
-    public static float FlipLayoutFactor = 1.34f;
+namespace Quantum.Demo
+{
+    public class UIMain : MonoBehaviour
+    {
+        public enum PhotonEventCode : byte
+        {
+            StartGame = 110
+        }
+        
+        public static QuantumLoadBalancingClient Client { get; set; }
 
-    public GameObject LogoVertical;
-    public GameObject LogoHorizontal;
+        private void Update()
+        {
+            Client?.Service();
+        }
 
-    public enum PhotonEventCode : byte {
-      StartGame = 110
+        private void OnDestroy()
+        {
+            if (Client != null && Client.IsConnected == true)
+            {
+                Client.Disconnect();
+            }
+        }
     }
-
-    private void Update() {
-      Client?.Service();
-
-      LogoVertical.Toggle(Screen.width < Screen.height * FlipLayoutFactor);
-      LogoHorizontal.Toggle(Screen.width >= Screen.height * FlipLayoutFactor);
-    }
-
-    private void OnDestroy() {
-      if (Client != null && Client.IsConnected == true) {
-        Client.Disconnect();
-      }
-    }
-  }
 }
