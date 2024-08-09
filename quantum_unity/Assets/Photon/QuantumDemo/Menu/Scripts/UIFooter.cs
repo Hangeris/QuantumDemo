@@ -3,24 +3,31 @@ using Photon.Deterministic;
 using UnityEngine;
 using UI = UnityEngine.UI;
 
-namespace Quantum.Demo {
-  public class UIFooter : MonoBehaviour {
-    private void Awake() {
+namespace Quantum.Demo
+{
+    public class UIFooter : MonoBehaviour
+    {
+        private void Awake()
+        {
 #if !UNITY_WEBGL
-      var versionText = GetComponentInChildren<UI.Text>();
-      try {
-        var fileVersionInfo = FileVersionInfo.GetVersionInfo(typeof(FP).Assembly.Location);
-        versionText.text = $"Quantum Version: {fileVersionInfo.ProductVersion}";
-      }
-      catch {
-        try {
-          versionText.text = $"Quantum Version: {typeof(FP).Assembly.GetName().Version.ToString()}";
+            var versionText = GetComponentInChildren<UI.Text>();
+            try
+            {
+                var fileVersionInfo = FileVersionInfo.GetVersionInfo(typeof(FP).Assembly.Location);
+                versionText.text = $"Quantum Version: {fileVersionInfo.ProductVersion}";
+            }
+            catch
+            {
+                try
+                {
+                    versionText.text = $"Quantum Version: {typeof(FP).Assembly.GetName().Version.ToString()}";
+                }
+                catch
+                {
+                    versionText.text = "Quantum Version: Unknown";
+                }
+            }
+#endif // !UNITY_WEBGL
         }
-        catch {
-          versionText.text = "Quantum Version: Unknown";
-        }
-      }
-#endif
     }
-  }
 }
