@@ -21,8 +21,8 @@
 
                 // user systems go here 
                 new Movement.MovementSystem(),
-                new PlayerSpawner.PlayerSpawner(),
-                new PlayerSpawner.PlayerDespawner(),
+                new PlayerSpawner.SpawnSystem(),
+                new PlayerSpawner.DespawnSystem(),
             };
         }
     }

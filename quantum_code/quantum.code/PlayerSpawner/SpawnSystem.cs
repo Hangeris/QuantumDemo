@@ -3,7 +3,7 @@ using Quantum.Movement;
 
 namespace Quantum.PlayerSpawner
 {
-    public unsafe class PlayerSpawner : SystemMainThreadFilter<MovementSystem.Filter>, ISignalOnPlayerDataSet
+    public unsafe class SpawnSystem : SystemMainThreadFilter<MovementSystem.Filter>, ISignalOnPlayerDataSet
     {
         public override void Update(Frame frame, ref MovementSystem.Filter filter) { }
         

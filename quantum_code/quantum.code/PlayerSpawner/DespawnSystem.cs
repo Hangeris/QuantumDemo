@@ -2,7 +2,7 @@
 
 namespace Quantum.PlayerSpawner
 {
-    public unsafe class PlayerDespawner : SystemMainThreadFilter<MovementSystem.Filter>, ISignalOnPlayerDisconnected
+    public unsafe class DespawnSystem : SystemMainThreadFilter<MovementSystem.Filter>, ISignalOnPlayerDisconnected
     {
         public override void Update(Frame frame, ref MovementSystem.Filter filter) { }
         
