@@ -4,8 +4,8 @@
     {
         public static SystemBase[] CreateSystems(RuntimeConfig gameConfig, SimulationConfig simulationConfig)
         {
-            return new SystemBase[]
-            {
+            return
+            [
                 // pre-defined core systems
                 new Core.CullingSystem2D(),
                 new Core.CullingSystem3D(),
@@ -20,10 +20,10 @@
                 new Core.PlayerConnectedSystem(),
 
                 // user systems go here 
-                new Movement.MovementSystem(),
-                new PlayerSpawner.SpawnSystem(),
-                new PlayerSpawner.DespawnSystem(),
-            };
+                new Systems.Movement.MovementSystem(),
+                new Systems.PlayerSpawner.SpawnSystem(),
+                new Systems.PlayerSpawner.DespawnSystem()
+            ];
         }
     }
 }

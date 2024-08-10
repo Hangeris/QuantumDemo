@@ -1,6 +1,6 @@
-﻿using Quantum.Player;
+﻿using Quantum.Systems.Player;
 
-namespace Quantum.PlayerSpawner
+namespace Quantum.Systems.PlayerSpawner
 {
     public unsafe class DespawnSystem : SystemMainThreadFilter<PlayerSystem.Filter>, ISignalOnPlayerDisconnected
     {

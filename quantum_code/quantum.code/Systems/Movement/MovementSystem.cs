@@ -1,7 +1,7 @@
 ﻿using Photon.Deterministic;
-using Quantum.Player;
+using Quantum.Systems.Player;
 
-namespace Quantum.Movement
+namespace Quantum.Systems.Movement
 {
     public unsafe class MovementSystem : SystemMainThreadFilter<PlayerSystem.Filter>
     {

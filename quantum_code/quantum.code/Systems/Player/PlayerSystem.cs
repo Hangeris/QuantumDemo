@@ -1,4 +1,4 @@
-﻿namespace Quantum.Player;
+﻿namespace Quantum.Systems.Player;
 
 public unsafe class PlayerSystem : SystemMainThreadFilter<PlayerSystem.Filter>
 {

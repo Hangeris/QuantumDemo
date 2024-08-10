@@ -1,7 +1,7 @@
 ﻿using Photon.Deterministic;
-using Quantum.Player;
+using Quantum.Systems.Player;
 
-namespace Quantum.PlayerSpawner
+namespace Quantum.Systems.PlayerSpawner
 {
     public unsafe class SpawnSystem : SystemMainThreadFilter<PlayerSystem.Filter>, ISignalOnPlayerDataSet
     {
