@@ -51,6 +51,11 @@ MonoBehaviour:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
+    - Path: Resources/DB/Map2
+      AssetRef:
+        Id:
+          Value: 2458639363799089004
+      ResourcePath: DB/Map2
     - Path: Resources/DB/Player|EntityPrototype
       AssetRef:
         Id:
@@ -61,3 +66,8 @@ MonoBehaviour:
         Id:
           Value: 3093865984696992040
       ResourcePath: DB/Map1_mesh
+    - Path: Resources/DB/Map2_mesh
+      AssetRef:
+        Id:
+          Value: 3203432396720153605
+      ResourcePath: DB/Map2_mesh
