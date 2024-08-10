@@ -7,6 +7,11 @@ namespace Quantum.Systems.PlayerSpawner
     {
         public override void Update(Frame frame, ref PlayerSystem.Filter filter) { }
         
+        public static FPVector3 GetSpawnPosition(int playerNumber)
+        {
+            return new FPVector3(playerNumber * 2, 0, 0);
+        }
+        
         public void OnPlayerDataSet(Frame f, PlayerRef player)
         {
             var data = f.GetPlayerData(player);
@@ -25,11 +30,6 @@ namespace Quantum.Systems.PlayerSpawner
             {
                 transform->Position = GetSpawnPosition(player);
             }
-        }
-
-        private FPVector3 GetSpawnPosition(int playerNumber)
-        {
-            return new FPVector3(playerNumber * 2, 0, 0);
         }
     }
 }
