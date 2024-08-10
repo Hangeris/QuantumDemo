@@ -1,10 +1,10 @@
-﻿using Quantum.Movement;
+﻿using Quantum.Player;
 
 namespace Quantum.PlayerSpawner
 {
-    public unsafe class DespawnSystem : SystemMainThreadFilter<MovementSystem.Filter>, ISignalOnPlayerDisconnected
+    public unsafe class DespawnSystem : SystemMainThreadFilter<PlayerSystem.Filter>, ISignalOnPlayerDisconnected
     {
-        public override void Update(Frame frame, ref MovementSystem.Filter filter) { }
+        public override void Update(Frame frame, ref PlayerSystem.Filter filter) { }
         
         public void OnPlayerDisconnected(Frame f, PlayerRef player)
         {

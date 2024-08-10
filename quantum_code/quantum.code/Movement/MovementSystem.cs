@@ -1,20 +1,13 @@
 ﻿using Photon.Deterministic;
+using Quantum.Player;
 
 namespace Quantum.Movement
 {
-    public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter>
+    public unsafe class MovementSystem : SystemMainThreadFilter<PlayerSystem.Filter>
     {
         public const int LerpRotationSpeed = 15;
         
-        public struct Filter
-        {
-            public EntityRef Entity;
-            public CharacterController3D* CharacterController;
-            public Transform3D* Transform;
-            public PlayerLink* Link;
-        }
-        
-        public override void Update(Frame frame, ref Filter filter)
+        public override void Update(Frame frame, ref PlayerSystem.Filter filter)
         {
             var input = frame.GetPlayerInput(filter.Link->Player);
             var inputVector = new FPVector2((FP)input->X / 10, (FP)input->Y / 10);

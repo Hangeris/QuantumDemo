@@ -1,11 +1,11 @@
 ﻿using Photon.Deterministic;
-using Quantum.Movement;
+using Quantum.Player;
 
 namespace Quantum.PlayerSpawner
 {
-    public unsafe class SpawnSystem : SystemMainThreadFilter<MovementSystem.Filter>, ISignalOnPlayerDataSet
+    public unsafe class SpawnSystem : SystemMainThreadFilter<PlayerSystem.Filter>, ISignalOnPlayerDataSet
     {
-        public override void Update(Frame frame, ref MovementSystem.Filter filter) { }
+        public override void Update(Frame frame, ref PlayerSystem.Filter filter) { }
         
         public void OnPlayerDataSet(Frame f, PlayerRef player)
         {
