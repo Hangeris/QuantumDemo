@@ -4,6 +4,8 @@ namespace Quantum.Movement
 {
     public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter>
     {
+        public const int LerpRotationSpeed = 15;
+        
         public struct Filter
         {
             public EntityRef Entity;
@@ -24,6 +26,9 @@ namespace Quantum.Movement
             
             if (input->Jump.WasPressed)
                 filter.CharacterController->Jump(frame);
+
+            if (inputVector.SqrMagnitude != default)
+                filter.Transform->Rotation = FPQuaternion.Lerp(filter.Transform->Rotation, FPQuaternion.LookRotation(inputVector.XOY), frame.DeltaTime * LerpRotationSpeed);
         }
     }
 }
