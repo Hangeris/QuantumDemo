@@ -1,3 +1,4 @@
+using Cinemachine;
 using Quantum;
 using UnityEngine;
 
@@ -26,7 +27,7 @@ public class PlayerCameraHandler : MonoBehaviour
             return;
         
         // TODO: In a large project this would be changed with Dependency Injection or a Service Locator pattern
-        var virtualCamera = FindObjectOfType<Cinemachine.CinemachineVirtualCamera>();
+        var virtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
         if (virtualCamera == null)
         {
             Debug.LogError("PlayerHandler.OnEntityInstantiated No virtual camera found in scene. Aborting player setup.");
