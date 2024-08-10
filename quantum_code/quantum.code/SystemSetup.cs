@@ -20,9 +20,14 @@
                 new Core.PlayerConnectedSystem(),
 
                 // user systems go here 
+                new Systems.Player.PlayerSystem(),
+                
                 new Systems.Movement.MovementSystem(),
+                
                 new Systems.PlayerSpawner.SpawnSystem(),
-                new Systems.PlayerSpawner.DespawnSystem()
+                new Systems.PlayerSpawner.DespawnSystem(),
+                
+                new Systems.Respawn.RespawnSystem(),
             ];
         }
     }
