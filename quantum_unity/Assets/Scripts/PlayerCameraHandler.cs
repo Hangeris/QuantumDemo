@@ -1,4 +1,3 @@
-using System;
 using Quantum;
 using UnityEngine;
 
@@ -17,8 +16,6 @@ public class PlayerCameraHandler : MonoBehaviour
 
     private void OnEntityInstantiated(QuantumGame quantumGame)
     {
-        Debug.Log($"PlayerHandler.OnEntityInstantiated");
-
         var game = QuantumRunner.Default.Game;
         var frame = game.Frames.Verified;
 
@@ -28,7 +25,7 @@ public class PlayerCameraHandler : MonoBehaviour
         if (!game.PlayerIsLocal(playerLink.Player))
             return;
         
-        // In a large project this would be changed with Dependency Injection or a Service Locator pattern
+        // TODO: In a large project this would be changed with Dependency Injection or a Service Locator pattern
         var virtualCamera = FindObjectOfType<Cinemachine.CinemachineVirtualCamera>();
         if (virtualCamera == null)
         {
