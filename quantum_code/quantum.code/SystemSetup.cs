@@ -1,6 +1,4 @@
-﻿using Quantum.Movement;
-
-namespace Quantum
+﻿namespace Quantum
 {
     public static class SystemSetup
     {
@@ -22,7 +20,8 @@ namespace Quantum
                 new Core.PlayerConnectedSystem(),
 
                 // user systems go here 
-                new MovementSystem(),
+                new Movement.MovementSystem(),
+                new PlayerSpawner.PlayerSpawner(),
             };
         }
     }

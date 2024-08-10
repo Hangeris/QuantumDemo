@@ -4,9 +4,11 @@ namespace Quantum
 {
     partial class RuntimePlayer
     {
+        public AssetRefEntityPrototype CharacterEntityPrototype;
+        
         partial void SerializeUserData(BitStream stream)
         {
-            // implementation
+            stream.Serialize(ref CharacterEntityPrototype.Id);
         }
     }
 }

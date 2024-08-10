@@ -338,7 +338,10 @@ MonoBehaviour:
     SimulationConfig:
       Id:
         Value: 0
-  Players: []
+  Players:
+  - CharacterEntityPrototype:
+      Id:
+        Value: 2795525084969801631
   PreloadAddressables: 0
   DynamicAssetDB:
     OnInitialDynamicAssetsRequested:
